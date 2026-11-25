@@ -1,2 +1,31 @@
-tell the agent to add a list if all required libraries for those who are gonna set up 
-their env to run this prj
+# IPI-Firewall — Conda Environment Setup & Required Packages
+# Reproduces the local `nlp-project` environment (Python 3.11):
+#   conda create -n nlp-project python=3.11 -y
+#   conda activate nlp-project
+#   pip install -r required_packages.txt
+
+# --- Data Processing & EDA ---
+numpy==2.4.6
+pandas==3.1.1
+tqdm==4.70.1
+
+# --- Visualization ---
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# --- NLP & Hugging Face Tokenizers (DeBERTa-v3 & ModernBERT) ---
+transformers==5.24.1
+tokenizers==0.23.3
+huggingface_hub==2.4.0
+safetensors==0.8.0
+sentencepiece==0.2.3
+protobuf==7.36.2
+
+# --- Jupyter / Interactive Notebooks ---
+ipykernel==7.3.0
+ipython==9.17.1
+
+# --- Optional / Future Training & Evaluation (not yet installed in local env) ---
+# torch          # Install matching your CPU/CUDA setup: https://pytorch.org/get-started/locally/
+# scikit-learn   # GroupShuffleSplit / GroupKFold & metrics
+# seqeval        # Span-level BIO entity F1 evaluation
