@@ -1,0 +1,2 @@
+tell the agent to add a list if all required libraries for those who are gonna set up 
+their env to run this prj
