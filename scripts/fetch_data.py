@@ -17,6 +17,7 @@ REPOS = {
             "benchmark/email": "email",
             "benchmark/table": "table",
             "benchmark/code": "code",
+            "benchmark/abstract": "abstract",
             "benchmark/text_attack_train.json": "text_attack_train.json",
             "benchmark/text_attack_test.json": "text_attack_test.json",
             "benchmark/code_attack_train.json": "code_attack_train.json",
